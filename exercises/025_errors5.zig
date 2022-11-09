@@ -28,7 +28,7 @@ fn addFive(n: u32) MyNumberError!u32 {
     //
     var x = detect(n);
 
-    return x + 5;
+    return try x + 5;
 }
 
 fn detect(n: u32) MyNumberError!u32 {

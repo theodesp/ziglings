@@ -22,4 +22,5 @@ pub fn main() void {
     // to this code so that our program prints "One Two\n":
     std.debug.print("Two\n", .{});
     std.debug.print("One ", .{});
+    defer std.debug.print("One Two\n", .{});
 }
